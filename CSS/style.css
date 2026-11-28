@@ -539,7 +539,7 @@ header {
     margin-top: 12px;
     font-size: 15px;
 }
-
+[]
 
 /* PROJECTS GRID */
 
@@ -936,4 +936,23 @@ textarea:focus {
 
 #backToTop:hover {
     background-color: #d4a373;
+}
+/* View Project Button */
+
+.project-link {
+    display: inline-block;
+    background: #354a8a;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.project-link:hover {
+    background: #243568;
+    transform: translateY(-3px);
 }

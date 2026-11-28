@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Practical Work</title>
+
+    <!-- Existing Portfolio CSS -->
+    <link rel="stylesheet" href="../../CSS/style.css">
+
+    <style>
+    .practical-controls {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 25px auto;
+        max-width: 800px;
+    }
+
+    #practical-search {
+        flex: 1;
+        min-width: 250px;
+        padding: 12px 15px;
+        border: 1px solid #b47b43;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .practical-controls button {
+        background: #17243a;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 16px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .practical-controls button:hover {
+        background: #b47b43;
+
+    }
+
+    .floating-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background: #17243a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.floating-top:hover {
+    background: #b47b43;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">My MCA Portfolio</div>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Practical Work Section -->
+    <section class="documents">
+
+        <div class="section-heading">
+            <p>MY ACADEMIC WORK</p>
+            <h2>My Practical Work</h2>
+        </div>
+
+        <p class="documents-intro">
+            Welcome to my collection of 136 HTML practical assignments.
+        </p>
+        <div class="practical-controls">
+    <input
+        type="text"
+        id="practical-search"
+        placeholder="Search by question number or practical name..."
+    >
+
+    
+    <button type="button" id="scroll-bottom" title="Scroll to bottom">↓</button>
+</div>
+     <p id="practical-count" style="text-align: center; margin: 15px 0; color: #26344a; font-weight: bold;">
+    Showing 136 of 136 practicals
+</p>
+
+        <div class="documents-container" id="practical-container">
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>My MCA E-Portfolio</p>
+        <p>All Rights Reserved.</p>
+    </footer>
+
+    
+<button type="button" id="scroll-top" class="floating-top" title="Scroll to top">
+    ↑
+</button>
+
+<script src="practical-files.js"></script>
+<script src="practical-display.js"></script>
+
+
+</body>
+</html>
